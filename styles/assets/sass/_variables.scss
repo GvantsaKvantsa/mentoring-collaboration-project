@@ -1,0 +1,17 @@
+// Colors
+$bg-button: #052A44;
+$color-title-mob: #183B56;
+$color-text-dark: #12141D;
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-subtitle-desk: #071210;
+
+// Breakpoints
+$desktop: 1240px;
+
+// Mixin for easy desktop styling
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}

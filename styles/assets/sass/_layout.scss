@@ -1,0 +1,197 @@
+@import "variables";
+
+.main-container-1049 {
+    width: 272px;
+    min-height: 870px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    @include desktop {
+        width: 1240px;
+        height: 482px;
+        gap: 40px;
+    }
+}
+
+.header-1047 {
+    width: 272px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+
+    @include desktop {
+        width: 1240px;
+        height: 103px;
+    }
+
+    .title {
+        font-size: 28px;
+        line-height: 40px;
+        color: $color-title-mob;
+        font-weight: 400;
+
+        @include desktop {
+            width: 628px;
+            margin: 0 auto;
+            font-size: 42px;
+            line-height: 60px;
+            font-weight: 600;
+            color: $color-black;
+            text-transform: capitalize;
+        }
+    }
+
+    .subtitle {
+        font-size: 16px;
+        line-height: 28px;
+        color: $color-text-dark;
+
+        @include desktop {
+            width: 1240px;
+            font-size: 18px;
+            line-height: 100%;
+            color: $color-subtitle-desk;
+        }
+    }
+}
+.reviews-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 272px;
+    gap: 32px;
+
+    @include desktop {
+        width: 1240px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+.reviews-list-1048 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 2px 4px 28px 0px rgba(0, 0, 0, 0.08);
+
+    @include desktop {
+        flex-direction: row;
+        width: 1240px;
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+.card-1019 {
+    width: 272px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    @include desktop {
+        width: 336px;
+    }
+
+    .user-info-1018 {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        .avatar {
+            width: 45.85px;
+            height: 45.85px;
+            border-radius: 50%;
+            object-fit: cover;
+
+            @include desktop {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+
+    .user-text-1017 {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        .name {
+            font-size: 11.79px;
+            font-weight: 700;
+            color: $color-text-dark;
+            @include desktop { font-size: 18px; }
+        }
+
+        .role {
+            font-size: 14px;
+            color: $color-text-dark;
+            display: block;
+            @include desktop { font-size: 14px; }
+        }
+    }
+
+    .review-text {
+        width: 220.08px;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: $color-text-dark;
+
+        @include desktop {
+            width: 336px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
+.btn-see-more-967 {
+    width: 89px;
+    height: 37px;
+    margin-top: 32px;
+    margin-left: 85px;
+    background: $bg-button;
+    color: $color-white;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include desktop { display: none; }
+}
+
+.arrows-1025 {
+    display: none;
+
+    @include desktop {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        margin-top: 60px;
+
+        .arrow {
+            width: 48px;
+            height: 49px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #000000;
+
+            &.next {
+                background: $bg-button;
+                border-color: $bg-button;
+            }
+        }
+    }
+}
