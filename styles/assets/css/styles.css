@@ -23,8 +23,9 @@ button {
 
 .main-container-1049 {
   width: 272px;
-  min-height: 870px;
+  max-height: 870px;
   margin: 40px auto;
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,6 +100,7 @@ button {
 }
 
 .reviews-list-1048 {
+  width: 336px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -117,7 +119,7 @@ button {
 }
 
 .card-1019 {
-  width: 272px;
+  width: 262px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -171,7 +173,7 @@ button {
   }
 }
 .card-1019 .review-text {
-  width: 220.08px;
+  width: 222.08px;
   font-size: 12px;
   line-height: 20px;
   text-align: center;
@@ -228,6 +230,248 @@ button {
     background: #052A44;
     border-color: #052A44;
   }
+}
+
+.contact-section {
+  width: 271px;
+  max-height: 917px;
+  background: #E8DB84;
+  border-radius: 10px;
+  padding: 24px 13px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.contact-section h1 {
+  width: 237px;
+  height: 120px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+.contact-section .description-p {
+  width: 245px;
+  height: 140px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+}
+.contact-section .form-container {
+  width: 242px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.contact-section .form-container .input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  display: flex;
+}
+.contact-section .form-container .form-input {
+  width: 242px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 20px 24px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #1E1E1E;
+}
+.contact-section .form-container .form-input::placeholder {
+  color: #1E1E1E;
+}
+.contact-section .form-container .form-input {
+  height: 58px;
+  width: 100%;
+}
+.contact-section .form-container .form-textarea {
+  width: 242px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 20px 24px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #1E1E1E;
+}
+.contact-section .form-container .form-textarea::placeholder {
+  color: #1E1E1E;
+}
+.contact-section .form-container .form-textarea {
+  width: 100%;
+  height: 207px;
+  padding-top: 19px;
+  resize: none;
+}
+.contact-section .form-container .submit-btn {
+  width: 176px;
+  height: 54px;
+  background: #052A44;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+.contact-section .form-container .submit-btn span {
+  font-weight: 600;
+  font-size: 16px;
+  padding-top: 20px;
+  color: #FFFFFF;
+}
+@media (min-width: 1240px) {
+  .contact-section {
+    width: 1240px;
+    height: 674px;
+    border-radius: 29px;
+    padding: 40px 32px;
+    gap: 32px;
+  }
+  .contact-section h1 {
+    width: 1176px;
+    height: 63px;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 100%;
+  }
+  .contact-section .description-p {
+    width: 875px;
+    height: 54px;
+    font-size: 18px;
+    line-height: 100%;
+  }
+  .contact-section .form-container {
+    width: 875px;
+    gap: 20px;
+  }
+  .contact-section .form-container .input-group {
+    flex-direction: row;
+    gap: 12px;
+  }
+  .contact-section .form-container .input-group .form-input {
+    width: 431.5px;
+  }
+  .contact-section .form-container .form-textarea {
+    width: 875px;
+  }
+}
+
+.main-footer {
+  background-color: #f9f9f9;
+  padding: 40px 0 20px;
+  font-family: "Poppins", sans-serif;
+}
+.main-footer .footer-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+}
+.main-footer .footer-container .social-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.main-footer .footer-container .social-col .social-link {
+  width: 33px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid #071210;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.main-footer .footer-container .social-col .social-link img {
+  width: 10px;
+}
+.main-footer .footer-container .social-col .social-link:hover {
+  background-color: #071210;
+}
+.main-footer .footer-container .social-col .social-link:hover img {
+  filter: invert(100%) sepia(100%) grayscale(100%);
+}
+@media (min-width: 1240px) {
+  .main-footer .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  .main-footer .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  .main-footer .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+.main-footer .footer-col .footer-logo {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #183B56;
+}
+.main-footer .footer-col p, .main-footer .footer-col .footer-email {
+  font-size: 14px;
+  color: #5A7184;
+  margin: 4px 0;
+  text-decoration: none;
+}
+.main-footer .social-col .social-icons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 12px;
+}
+.main-footer .social-col .social-icons a {
+  color: #183B56;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.main-footer .social-col .social-icons a:hover {
+  color: #052A44;
+}
+@media (min-width: 1024px) {
+  .main-footer .align-right {
+    text-align: right;
+  }
+}
+.main-footer .footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid #e5eaf4;
+  padding-top: 20px;
+  text-align: center;
+}
+.main-footer .footer-bottom p {
+  font-size: 12px;
+  color: #5A7184;
 }
 
 /*# sourceMappingURL=styles.css.map */
