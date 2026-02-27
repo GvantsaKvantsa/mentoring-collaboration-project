@@ -475,3 +475,155 @@ button {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+/* გვანცა იწყება აქ */
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+/* --- მობაილის ძირითადი სტილი --- */
+.navbar { 
+  padding: 15px 20px; 
+  background: #fff; 
+  border-bottom: 1px solid #eee; 
+}
+
+.nav-container { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.logo-desktop, .nav-links-center, .desktop-actions { 
+  display: none; }
+
+.logo-mobile { 
+  font-size: 24px; 
+  font-weight: bold; 
+  color: #0d233b; 
+}
+
+.logo-mobile span { 
+  color: #3b82f6; 
+}
+
+.nav-right { 
+  display: flex; 
+  align-items: center; 
+  gap: 15px; 
+}
+
+.burger { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 4px; 
+  cursor: pointer; 
+}
+
+.burger span { 
+  width: 22px; 
+  height: 2px; 
+  background: #0d233b; 
+}
+
+/* მობაილისთვის */
+.mobile-menu { 
+  position: fixed; 
+  top: 0; 
+  right: -100%; 
+  width: 100%; 
+  height: 100vh; 
+  background: #fff; 
+  z-index: 100; 
+  transition: 0.3s; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  padding-top: 60px; }
+
+#menu-check:checked ~ .mobile-menu { right: 0; }
+
+.close { 
+  position: absolute; 
+  top: 15px; 
+  right: 20px; 
+  font-size: 35px; 
+  cursor: pointer; 
+}
+
+.mobile-links { 
+  list-style: none; 
+  text-align: center; 
+  margin: 40px 0; 
+}
+
+.mobile-links li { 
+  margin: 20px 0; 
+}
+
+.mobile-links a { 
+  text-decoration: none; 
+  color: #333; 
+  font-size: 18px; 
+}
+
+.btn-trial-mobile { 
+  background: #000; 
+  color: #fff; 
+  padding: 12px 60px; 
+  border-radius: 8px; 
+  text-decoration: none; 
+  font-weight: bold; 
+}
+
+/* დესკტოპი */
+@media (min-width: 1024px) {
+    .navbar { 
+      background: #0d233b; 
+      margin: 20px; 
+      border-radius: 12px; 
+      padding: 15px 40px; 
+      border: none; }
+    
+    .logo-mobile, .burger, .mobile-menu { display: none; }
+    .logo-desktop { 
+      display: block; 
+      color: #fff; 
+      font-size: 20px; 
+      font-weight: 500; 
+    }
+
+    .nav-links-center { 
+      display: flex; 
+      list-style: none; 
+      gap: 30px; 
+    }
+
+    .nav-links-center a { 
+      color: #fff; 
+      text-decoration: none; 
+      font-size: 15px; 
+      opacity: 0.9; 
+    }
+
+    .desktop-actions { 
+      display: flex; 
+      align-items: center; 
+      gap: 25px; 
+    }
+
+    .sign-in { 
+      color: #fff; 
+      text-decoration: none; 
+      font-size: 15px; 
+    }
+    
+    .btn-trial { 
+        background: #fff; 
+        color: #0d233b; 
+        padding: 10px 22px; 
+        border-radius: 8px; 
+        text-decoration: none; 
+        font-weight: bold; 
+        font-size: 14px; 
+    }
+  }
